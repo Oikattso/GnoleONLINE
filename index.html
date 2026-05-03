@@ -62,5 +62,17 @@
         document.getElementById('player-count').dispatchEvent(new Event('change'));
     };
 </script>
+<!-- MODAL DÉTAILS DE LA CARTE -->
+    <div id="card-detail-modal" class="hidden">
+        <div class="modal-box">
+            <button class="close-btn" onclick="closeCardModal()">X</button>
+            <div id="modal-type-label">TYPE</div>
+            <h2 id="modal-card-title">Titre</h2>
+            <p id="modal-card-desc">Description de la carte...</p>
+            <div id="modal-actions">
+                <!-- Le bouton d'utilisation apparaîtra ici si c'est un Joker -->
+            </div>
+        </div>
+    </div>
 </body>
 </html>

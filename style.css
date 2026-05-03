@@ -142,4 +142,51 @@ button:hover { background: #000; color: #fff; }
     display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer; /* Indique qu'on peut cliquer dessus */
+    transition: 0.2s;
+}
+
+/* Effet au survol pour indiquer qu'on va la défausser/utiliser */
+.mini-card:hover {
+    background: #ff5733; 
+    color: #fff;
+    border-color: #ff5733;
+    text-decoration: line-through;
+}
+
+/* Le style spécial pour les cartes immunité/persistantes */
+.persistent-card {
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 5px #ffd700;
+}
+
+.gnole-counter {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-gnole {
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.9em;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.btn-gnole:hover {
+    background: #555;
+    color: #fff;
+    transform: scale(1.1);
 }

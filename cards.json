@@ -26,5 +26,17 @@
     "desc": "Tu peux décider qui gnole à ta place pour cette carte.",
     "type": "bonus",
     "scope": "player"
+  },
+  {
+    "title": "IMMUNITÉ",
+    "desc": "Protège d'un coup à gnoler. Tu peux la garder et l'utiliser quand tu veux (survit aux purges).",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "SÉANCE DE PURGE",
+    "desc": "Tous les effets actifs normaux sont supprimés.",
+    "type": "purge"
   }
 ]
