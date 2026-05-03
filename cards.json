@@ -1,37 +1,1337 @@
 [
   {
-    "title": "LE SNIPER",
-    "desc": "Le dernier à se mute sur Discord gnole 2 fois.",
+    "title": "JE N'AI JAMAIS #2",
+    "desc": "Invente la suite, ceux qui l'ont déjà fait gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "VOYEUR",
+    "desc": "Gnole 2 coups si tu as déjà surpris tes parents en train de faire des bêtises.",
     "type": "défi"
   },
   {
-    "title": "POIDS LOURD",
-    "desc": "Tu gnoles double dose pendant 3 tours.",
+    "title": "MARIAGE",
+    "desc": "Jusqu'à la prochaine carte purge, tout ce que tu gnoles, le joueur à l'opposé gnole aussi et inversement.",
     "type": "malus",
     "scope": "player"
   },
   {
-    "title": "LOI SÈCHE",
-    "desc": "Personne ne peut gnoler pendant un tour de table.",
-    "type": "bonus",
-    "scope": "group"
-  },
-  {
-    "title": "MAITRE DU JEU",
-    "desc": "Tu peux décider qui gnole à ta place pour cette carte.",
-    "type": "bonus",
+    "title": "MUTISME",
+    "desc": "Tu n'as plus le droit de prononcer le mot gnole jusqu'à la prochaine carte purge, gnole 1 coup par erreur.",
+    "type": "malus",
     "scope": "player"
   },
   {
-    "title": "IMMUNITÉ",
-    "desc": "Protège d'un coup à gnoler. Tu peux la garder et l'utiliser quand tu veux (survit aux purges).",
+    "title": "PURGE",
+    "desc": "Choisis un thème. À trois, tout le monde donne un mot en lien avec ce thème. Ceux qui ont donné le même mot distribuent 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "BRIGITTE",
+    "desc": "Distribue 2 coups si tu as baisé une personne de plus de deux fois ton âge, +1 coup si tu as menti sur le tien pour la séduire.",
+    "type": "défi"
+  },
+  {
+    "title": "ORACLE",
+    "desc": "Chacun essaie de deviner quand tu as ken pour la dernière fois, le plus proche distribue 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "COSMOPOLITE",
+    "desc": "Distribue autant de coups que de nationalités de personnes que tu as pécho.",
+    "type": "défi"
+  },
+  {
+    "title": "SEXTO",
+    "desc": "Lis à haute voix les trois premiers messages qui s'affichent sur Messenger quand on tape \"baiser\" dans la barre de recherche, refuse pour 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "DICO",
+    "desc": "Distribue 3 coups si tu trouves 5 synonymes de VAGIN, gnole 3 coups si tu échoues.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "POIREAU",
+    "desc": "Gnole 2 coups si tu as un immonde grain de beauté.",
+    "type": "défi"
+  },
+  {
+    "title": "GLOBETROTTER",
+    "desc": "Distribue autant de coups que de pays que tu as visités depuis un an.",
+    "type": "défi"
+  },
+  {
+    "title": "GROSSE GRATOS",
+    "desc": "Tu gnoles 3 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Désignez deux joueurs qui racontent un moment gênant de leur vie, les autres votent pour le plus malaisant. Le gagnant distribue 2 coups, le perdant gnole 2 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "BOULET",
+    "desc": "Jusqu'à la prochaine carte purge, tu cries \"santé mais pas des pieds\" à chaque fois que tu gnoles. Tu gnoles un coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "PAS HUMAINE",
+    "desc": "Interprète Bella de Maître Gims, distribue 3 coups si tu assures, gnole en 2 si tu échoues.",
+    "type": "défi"
+  },
+  {
+    "title": "GOLDEN SHOWER",
+    "desc": "Gnole 2 coups si tu as déjà fait des trucs bizarres avec de la pisse.",
+    "type": "défi"
+  },
+  {
+    "title": "BARREAU",
+    "desc": "Gnole 2 coups si tu as déjà été appelé au tableau avec une gaule apparente.",
+    "type": "défi"
+  },
+  {
+    "title": "#123#",
+    "desc": "Compose un numéro au hasard, tiens la conversation le plus longtemps possible. Distribue 2 coups si tu tiens plus d'une minute, refuse pour 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "MIROIR",
+    "desc": "Conserve cette carte. À tout moment tu pourras donner tes coups au joueur de ton choix.",
     "type": "bonus",
     "scope": "player",
     "persistent": true
   },
   {
-    "title": "SÉANCE DE PURGE",
-    "desc": "Tous les effets actifs normaux sont supprimés.",
+    "title": "NERVEUX",
+    "desc": "Jusqu'à la prochaine purge, tu dois crier des insultes à chaque fois que tu parles.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "TURBO",
+    "desc": "Jusqu'à la prochaine purge, tu ne peux pas gnoler qu'un seul coup, minimum 2 coups à chaque fois.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "GROSSE GRATOS",
+    "desc": "Distribue 3 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "INGÉNIEUR",
+    "desc": "Invente une règle qui s'applique jusqu'à la prochaine purge.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "GRATOS",
+    "desc": "Gnole un coup.",
+    "type": "défi"
+  },
+  {
+    "title": "ACHARNEMENT",
+    "desc": "Conserve cette carte. À tout moment tu pourras doubler le nombre de coups du tour.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "GRATOS",
+    "desc": "Distribue un coup.",
+    "type": "défi"
+  },
+  {
+    "title": "BABA",
+    "desc": "Tu ne peux plus prononcer les \"r\" jusqu'à la prochaine purge, gnole un coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DICO",
+    "desc": "Tu distribues 3 coups si tu trouves 5 synonymes d'avoir une érection, gnole en 3 si tu échoues.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CHI-FOU-GNOLE",
+    "desc": "Tu fais un pierre-feuille-ciseaux avec le prochain joueur. Celui qui perd gnole 1 coup, jeu en 3 manches.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "GRATOS",
+    "desc": "Gnole 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "POÈTES DISPARUS",
+    "desc": "Cite 3 punchlines de rap, gnole 2 coups si tu échoues.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SACREBLEU",
+    "desc": "Jusqu'à la prochaine purge, tu gnoles 1 coup à chaque vulgarité que tu prononces.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "RECYCLAGE",
+    "desc": "Tu gnoles 2 coups si tu portes tes sous-vêtements d'hier.",
+    "type": "défi"
+  },
+  {
+    "title": "ALTRUISTE",
+    "desc": "Tu détestes gnoler seul, tu peux donc distribuer un coup à chaque fois que tu gnoles jusqu'à la prochaine purge.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "DOUBLE PEINE",
+    "desc": "Tu joues avec 2 verres jusqu'à la prochaine purge, tous tes coups sont donc doublés.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "CONFESSIONNAL",
+    "desc": "Jusqu'à la prochaine purge, tu es obligé de répondre à toutes les questions des autres joueurs. Tu devras gnoler 1 coup par question esquivée.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "NOUVELLE STAR",
+    "desc": "Tu ne peux plus parler qu'en chantant jusqu'à la prochaine purge, gnole un coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MARIAGE",
+    "desc": "Jusqu'à la prochaine purge, le joueur suivant gnole tout ce que tu gnoles et inversement.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "ZODIAC",
+    "desc": "Distribue autant de coups que de joueurs dont tu trouves le signe astrologique, gnole 2 coups si tu n'en connais aucun.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CRAMÉ",
+    "desc": "Gnole 2 coups si tes parents t'ont déjà surpris au pieu avec quelqu'un, +1 coup si tu as continué.",
+    "type": "défi"
+  },
+  {
+    "title": "VERLAN",
+    "desc": "Tu ne peux plus parler qu'en verlan jusqu'à la prochaine purge, tu gnoles 1 coup à chaque erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "ROUGE ET BLEU",
+    "desc": "Tu chantes un chant du PSG, gnole 2 coups si tu échoues.",
+    "type": "défi"
+  },
+  {
+    "title": "QUESTION KING",
+    "desc": "Jusqu'à la prochaine purge, les joueurs qui répondent à tes questions gnolent 1 coup.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "BODYGUARD",
+    "desc": "Conserve cette carte, à tout moment tu peux te sacrifier et gnoler à la place d'un joueur, c'est beau putain.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "QUESTION QUEEN",
+    "desc": "Jusqu'à la prochaine purge, les joueurs qui répondent à tes questions gnolent 1 coup.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "FADA",
+    "desc": "Jusqu'à la prochaine purge, tu parles avec un accent marseillais, gnole 1 coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "INSOMNIE",
+    "desc": "Gnole 2 coups si tu as déjà réglé tes problèmes d'insomnie par la masturbation.",
+    "type": "défi"
+  },
+  {
+    "title": "GARDAV",
+    "desc": "Gnole 2 coups si tu as déjà eu affaire à la police, distribue le double si ton histoire fait rire les autres.",
+    "type": "défi"
+  },
+  {
+    "title": "IMMUNITÉ",
+    "desc": "Conserve cette carte, à tout moment tu pourras éviter de gnoler pour 1 tour.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "DOUBLE JEU",
+    "desc": "Donne un mytho et une vérité, chaque joueur doit deviner le mytho, les perdants gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "FRANCE CULTURE",
+    "desc": "Distribue 3 coups si tu sais ce qu'est un dirty sanchez. Si tu ne sais pas, gnole 2 coups et lis à haute voix la définition.",
+    "type": "question"
+  },
+  {
+    "title": "DOUBLE JEU #2",
+    "desc": "Donne un mytho et une vérité, chaque joueur doit deviner le mytho, les perdants gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "TRANSIT",
+    "desc": "Distribue 2 coups si tu as déjà été chier depuis le début de la soirée, +1 si quelqu'un t'a cramé avant.",
+    "type": "défi"
+  },
+  {
+    "title": "GRATOS",
+    "desc": "Distribue 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "ANNIVERSAIRE",
+    "desc": "Donne la date de naissance du précédent joueur, gnole 2 coups si tu échoues.",
+    "type": "question"
+  },
+  {
+    "title": "SNOWDEN",
+    "desc": "Le précédent joueur choisit ta photo de profil pour Facebook, refuse pour 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "HARMONIE",
+    "desc": "Tous les joueurs ayant gnolé plus que toi distribuent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "MARIAGE POUR TOUS",
+    "desc": "Jusqu'à la prochaine purge, tout ce que tu gnoles, les gens du même sexe gnolent aussi et inversement.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "INCERTAIN",
+    "desc": "Tu ne dois t'exprimer qu'en questions jusqu'à la prochaine purge, tu gnoles 1 coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "POCHTRON",
+    "desc": "Jusqu'à la prochaine purge, tu cries \"la gnole bon dieu\" à chaque fois que tu gnoles. Tu gnoles 1 coup par erreur.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MARIAGE",
+    "desc": "Jusqu'à la prochaine purge, le joueur précédent gnole tout ce que tu gnoles et inversement.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DICO",
+    "desc": "Distribue 3 coups si tu trouves 5 synonymes d'argent, gnole en 3 si tu échoues.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "HISTORIQUE",
+    "desc": "Tu laisses le joueur suivant lire à haute voix ton historique des dernières 24h ou tu refuses en gnolant 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "INTERRO #2",
+    "desc": "Donne le nom des 3 dernières cartes tirées, Gnole 2 coups par carte oubliée.",
+    "type": "question"
+  },
+  {
+    "title": "CHINEUR",
+    "desc": "Jusqu'à la prochaine purge, gnole 1 coup par personne du sexe opposé qui gnole.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "GALETTE",
+    "desc": "Distribue autant de coups que le nombre de fois où tu as vomi cette année.",
+    "type": "défi"
+  },
+  {
+    "title": "HARMONIE",
+    "desc": "Tous les joueurs ayant moins gnolé que toi gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "POÉSIE",
+    "desc": "Rimes en \"ette\" ? Celui qui n'a plus d'idées gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "JACKIE",
+    "desc": "Ceux qui ont déjà porté un costume blanc gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "TU PRÉFÈRES",
+    "desc": "Une pinte de pisse ou un shot de règles ? Tout le monde vote, les minoritaires gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "STAR DU X",
+    "desc": "Les joueurs qui se sont déjà filmés pendant leurs bêtises gnolent 2 coups, ils les distribuent s'ils montrent une scène.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, citez un cliché. Celui qui n'a plus d'idées gnole 3 coups.",
     "type": "purge"
+  },
+  {
+    "title": "QUARTIER ROUGE",
+    "desc": "Les joueurs qui ont déjà fait des bêtises avec un(e) prostitué(e)/stripteaseur(se) gnolent 2 coups, ils les distribuent s'ils racontent l'histoire.",
+    "type": "défi"
+  },
+  {
+    "title": "TU PRÉFÈRES",
+    "desc": "Baiser une chèvre mais que personne ne le sache ou ne pas la baiser mais que tout le monde pense que tu l'as fait ? Tout le monde vote, les minoritaires gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "WEASLEY",
+    "desc": "Les joueurs qui ont déjà chopé une personne rousse gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "NERD",
+    "desc": "Les joueurs qui portent des bagues ou des lunettes gnolent 2 coups, +1 coup pour le combo bague + lunettes.",
+    "type": "défi"
+  },
+  {
+    "title": "FICELLE",
+    "desc": "Les filles qui portent un string gnolent 2 coups, celles qui ne portent rien gnolent 4 coups, les mecs en string distribuent 6 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "AUSCULTATION",
+    "desc": "Ceux qui ont déjà joué au docteur avec un membre de leur famille distribuent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "ROTURIER",
+    "desc": "Chacun donne sa ville de naissance. Le joueur qui est né dans la plus grosse ville de paysans gnole 1 coup, +2 coups si c'est Limoges.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CALQUE",
+    "desc": "Si tu as un tatouage, les autres joueurs doivent essayer de le redessiner. S'ils échouent ils gnolent 2 coups. Si tu n'as pas de tatouage tu gnoles 1 coup.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CH'TIS",
+    "desc": "Ceux qui ont déjà pécho une personne avec ne serait-ce qu'une goutte de sang en commun gnolent 3 coups, +1 si vous le saviez.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, citez une catégorie YouPorn. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "MELTING POT",
+    "desc": "Chaque joueur choisit un accent qu'il devra garder jusqu'à la prochaine purge. Il gnole 2 coups par erreur.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "PICK-POCKET",
+    "desc": "Ceux qui ont déjà volé de l'argent à leurs parents gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "INTRUSION",
+    "desc": "Gnole 2 coups si tu es déjà allé te coucher dans le lit de quelqu'un car tu étais trop bourré pour retrouver le tien.",
+    "type": "défi"
+  },
+  {
+    "title": "SEXE VIRTUEL",
+    "desc": "Gnole 2 coups si tu as déjà raconté des cochonneries au téléphone, distribue-les si tu montres tes sextos.",
+    "type": "défi"
+  },
+  {
+    "title": "CAPITALISTE",
+    "desc": "Le joueur qui a le plus de thunes dans son portefeuille distribue 1 coup.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "ÂME SŒUR",
+    "desc": "Tous les joueurs désignent le joueur dont ils sont le plus proche. Les solitaires qui ne sont pointés par personne gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "GLANDU",
+    "desc": "Tout le monde désigne le joueur le plus paresseux. Celui qui récolte le plus de voix gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SOLO",
+    "desc": "Le dernier joueur à s'être masturbé distribue 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "RÉVOLUTION",
+    "desc": "Les joueurs qui ont un nom de famille français gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "POÉSIE",
+    "desc": "Rimes en \"ule\" ? Celui qui n'a plus d'idées gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "AU PIF",
+    "desc": "À 3, chaque joueur donne un nombre entre 1 et 10. Ceux qui ont donné le même chiffre sont éliminés, le survivant avec le chiffre le plus haut distribue 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "AMNÉSIE",
+    "desc": "Les joueurs qui ont déjà couché avec une personne dont ils ne connaissent plus le prénom gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "COMMUNISTE",
+    "desc": "Le joueur qui a le moins de thunes dans son portefeuille gnole 1 coup.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "NI OUI, NI NON",
+    "desc": "Les joueurs ne doivent dire ni oui, ni non, jusqu'à la prochaine purge. Ils gnolent 1 coup par erreur.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, citez un type d'alcool. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "CONFESSION",
+    "desc": "Les joueurs qui ont déjà menti depuis le début du jeu gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "TRUMP",
+    "desc": "Les joueurs désignent le joueur le plus raciste, l'élu gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PASSE-PARTOUT",
+    "desc": "Tous les joueurs plus petits que toi gnolent 1 coup. Si la différence est de plus de 10 cm, ils gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "POÉSIE",
+    "desc": "Rimes en \"ite\" ? Celui qui n'a plus d'idées gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PACS",
+    "desc": "Les joueurs qui ont déjà embrassé une personne du même sexe gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "MALAISE TV",
+    "desc": "Ceux qui sont déjà passés à la télé ou sur internet pour une raison malaisante gnolent un coup. Ils distribuent également un coup s'ils montrent l'extrait.",
+    "type": "défi"
+  },
+  {
+    "title": "TARZAN",
+    "desc": "Gnole 1 coup si tu as déjà chié dans la nature, +1 coup si tu ne t'es pas torché.",
+    "type": "défi"
+  },
+  {
+    "title": "BUZZER",
+    "desc": "Le joueur qui dit en premier le nom de chaque nouvelle musique qui passe jusqu'à la prochaine purge distribue 1 coup.",
+    "type": "bonus",
+    "scope": "group"
+  },
+  {
+    "title": "RETRAITE",
+    "desc": "Le joueur le plus vieux gnole 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "NAVIGATION PRIVÉE",
+    "desc": "Chacun votre tour, donnez des noms de sites pornos. Celui qui n'a plus d'idées gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PILIER DE BAR",
+    "desc": "Les joueurs désignent celui qui a la meilleure descente. L'élu gnolera 3 coups pour le prouver.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "RAISINS SECS",
+    "desc": "Ceux qui se sont déjà masturbés 4 fois ou plus aujourd'hui gnolent 1 coup pour recharger les batteries.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, citez un personnage qui meurt dans une série. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "TESTAMENT",
+    "desc": "Les joueurs qui ont dû gnoler à la carte d'avant s'allient pour faire gnoler 2 coups à la personne de leur choix.",
+    "type": "défi"
+  },
+  {
+    "title": "CHIPS",
+    "desc": "Les joueurs désignent le joueur le moins sportif, l'élu gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "FORMULE 1",
+    "desc": "Les joueurs qui ont eu leur permis du premier coup distribuent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "TU PRÉFÈRES",
+    "desc": "Avoir des poils pubiens à la place des dents ou des dents à la place des poils pubiens ? Tout le monde vote, les minoritaires gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, donnez le nom d'un Pokémon. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "POP PORN",
+    "desc": "Ceux qui ont déjà connu une expérience sexuelle au cinéma distribuent 2 coups. Ils les gnolent s'il s'agissait d'une expérience solo.",
+    "type": "défi"
+  },
+  {
+    "title": "QUITTE OU DOUBLE",
+    "desc": "Jusqu'à la prochaine purge, les joueurs peuvent tenter d'annuler leurs coups à pile ou face. S'ils se trompent, la peine est doublée.",
+    "type": "bonus",
+    "scope": "group"
+  },
+  {
+    "title": "TANGUY",
+    "desc": "Les joueurs qui habitent encore chez leurs parents gnolent 2 coups, +1 s'ils ont plus de 45 ans.",
+    "type": "défi"
+  },
+  {
+    "title": "SANS L'SOU",
+    "desc": "Le joueur qui a le plus petit salaire mensuel gnole son salaire divisé par 1000, ceux qui ne gagnent rien gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "À 3, tout le monde désigne un autre joueur. Celui qui a le plus de voix gnole 2 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, donnez le nom d'un objet qui peut servir de godemichet. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "QUEUTARD",
+    "desc": "Le joueur qui est célibataire depuis le plus longtemps distribue 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "ENCHÈRE",
+    "desc": "Les joueurs font des enchères sur le nombre de coups qu'ils sont prêts à gnoler pour distribuer le double.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "INDISCRET",
+    "desc": "Tous les joueurs dont les collègues/profs les ont déjà surpris lors d'une conversation gênante gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "TUCHE",
+    "desc": "Les joueurs qui arborent un immonde bouc ou une infecte frange gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "TROUBADOUR",
+    "desc": "Les vegans gnolent 2 coups, +3 s'ils portent un sarouel.",
+    "type": "défi"
+  },
+  {
+    "title": "MACHISME",
+    "desc": "Les mecs gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "CONCHITA WURST",
+    "desc": "Les joueurs qui se sont déjà travestis gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "PAPA PINGOUIN",
+    "desc": "Les joueurs qui travaillent en costard ou tailleur gnolent 1 coup pour oublier.",
+    "type": "défi"
+  },
+  {
+    "title": "AWARDS",
+    "desc": "Distribue autant de coups que de joueurs avec qui tu ne partirais pas en vacances. Double-les si tu révèles le nom de ces personnes.",
+    "type": "défi"
+  },
+  {
+    "title": "JE N'AI JAMAIS",
+    "desc": "Invente la suite, ceux qui l'ont déjà fait gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "À 3, tout le monde désigne un autre joueur. Celui qui a le plus de voix gnole 2 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "IMPUISSANT",
+    "desc": "Les joueurs qui ont déjà eu une \"panne\" gnolent 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "SOULARD",
+    "desc": "Gnole 2 coups si tu t'es déjà mis minable tout seul.",
+    "type": "défi"
+  },
+  {
+    "title": "MACRON",
+    "desc": "Les joueurs qui ont déjà fantasmé sur un prof ou un boss gnolent 2 coups. Ils en distribuent 1 s'ils racontent.",
+    "type": "défi"
+  },
+  {
+    "title": "THREESOME",
+    "desc": "Les joueurs qui ont déjà fait un plan à trois gnolent 2 coups. 2 coups de plus si vous étiez plus de 3.",
+    "type": "défi"
+  },
+  {
+    "title": "SEXISME",
+    "desc": "Les filles gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "COMBO GRATOS",
+    "desc": "À tour de rôle, chacun choisit un joueur qui doit gnoler 1 coup. 1 coup supplémentaire si tu as une raison valable.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "POLARDS",
+    "desc": "Les joueurs qui ont déjà eu les félicitations au lycée gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "PLEUREUSE",
+    "desc": "Les joueurs qui ont déjà chialé au collège à cause d'une mauvaise note gnolent 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "TU PRÉFÈRES",
+    "desc": "Un bon coup qui pue ou un mauvais coup qui sent bon ? Tout le monde vote, les minoritaires gnolent 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Chacun votre tour, donnez une position sexuelle. Celui qui n'a plus d'idées gnole 3 coups.",
+    "type": "purge"
+  },
+  {
+    "title": "BARTHEZ",
+    "desc": "Le joueur qui sera chauve en premier gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "HOBBIT",
+    "desc": "Le joueur avec les plus grands pieds gnole 2 coups.",
+    "type": "défi"
+  },
+  {
+    "title": "PUBERTÉ",
+    "desc": "Le joueur le plus jeune gnole 1 coup.",
+    "type": "défi"
+  },
+  {
+    "title": "POÉSIE",
+    "desc": "Rimes en \"ute\", celui qui n'a plus d'idées gnole 2 coups.",
+    "type": "mini-jeu"
+  },
+  {
+
+    "title": "PIGEON",
+
+    "desc": "Ceux qui ont déjà payé pour du contenu type OnlyFans ou MYM gnolent 3 coups. Distribue le double si tu es ou as été un 'Top Fan'.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "ENTREPRENEUR",
+
+    "desc": "Les joueurs qui ont déjà envisagé de créer un OnlyFans gnolent 2 coups. Ceux qui l'ont vraiment fait distribuent 5 coups (et lâchent leur lien dans le chat).",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "MUTE",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois te mute sur Discord quand ce n'est pas ton tour de jouer. Gnole 1 coup par oubli.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "SPEEDRUN",
+
+    "desc": "Le premier joueur à envoyer un GIF de chat dans le salon texte distribue 2 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "HISTORIQUE YOUTUBE",
+
+    "desc": "Partage ton écran et montre tes 5 dernières recherches YouTube, ou refuse en gnolant 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "Chacun votre tour, citez un jeu vidéo multijoueur. Celui qui n'a plus d'idées gnole 3 coups.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "ÉCHO",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois répéter la dernière phrase que tu viens de dire. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "HACKER",
+
+    "desc": "Conserve cette carte. À tout moment, tu peux l'utiliser pour annuler totalement l'effet d'une carte sur toi.",
+
+    "type": "bonus",
+
+    "scope": "player",
+
+    "persistent": true
+
+  },
+
+  {
+
+    "title": "NO-LIFE",
+
+    "desc": "Le joueur qui a le plus d'heures de jeu sur son jeu du moment (Steam, Riot, etc.) distribue 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "CAMÉRA CACHÉE",
+
+    "desc": "Les joueurs qui ont leur caméra activée distribuent 1 coup. Les autres (les timides) gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "CAPS LOCK",
+
+    "desc": "Jusqu'à la prochaine purge, si tu écris dans le chat texte, ça doit être EN MAJUSCULES. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "À trois, prenez la pose la plus ridicule possible à la caméra. Le dernier à rigoler distribue 3 coups. Ceux sans cam gnolent 2 coups d'office.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "SETUP",
+
+    "desc": "Prends ton setup en photo et envoie-le dans le chat. Le groupe vote pour le pire setup, l'élu gnole 2 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "BINGE-WATCHER",
+
+    "desc": "Ceux qui ont regardé plus de 3 épisodes d'une série aujourd'hui gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "KARAOKÉ VOCAL",
+
+    "desc": "Fais deviner une chanson en fredonnant dans ton micro. Le premier qui trouve distribue 2 coups, si personne ne trouve tu gnoles 2 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "EN DANGER",
+
+    "desc": "Les joueurs dont le téléphone, le casque sans fil ou la manette a moins de 15% de batterie gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "PING",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois dire 'ping' avant chaque prise de parole. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "MODÉRATEUR",
+
+    "desc": "Jusqu'à la prochaine purge, tu as le pouvoir de mute la personne de ton choix pendant son propre tour pour qu'elle le passe en silence.",
+
+    "type": "bonus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "PSEUDO PÉTÉ",
+
+    "desc": "Ceux qui utilisent un pseudo Discord complètement abstrait (qui ne contient pas du tout leur prénom) gnolent 1 coup.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "À trois, tout le monde envoie un emoji dans le chat texte. Ceux qui ont envoyé le même gnolent 2 coups.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "FOND D'ÉCRAN",
+
+    "desc": "Montre le fond d'écran de ton téléphone à la caméra. S'il y a ta propre tête dessus, gnole 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "L'HÔTE",
+
+    "desc": "Le créateur du serveur Discord (ou du groupe d'appel) distribue 2 coups en tant que maître des lieux.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "ASMR",
+
+    "desc": "Jusqu'à la prochaine purge, tu ne peux parler qu'en chuchotant très près de ton micro. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "CASANIER",
+
+    "desc": "Les joueurs qui n'ont pas mis un pied dehors aujourd'hui gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "ROULETTE RUSSE",
+
+    "desc": "Tape un chiffre de 1 à 6 dans le chat. Le joueur suivant fera de même, etc. Le premier à taper '1' gnole 4 coups et le jeu s'arrête.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "PAUSE PIPI",
+
+    "desc": "Conserve cette carte. Tu peux l'utiliser pour partir aux toilettes ou te chercher à boire sans aucune pénalité pendant le tour des autres.",
+
+    "type": "bonus",
+
+    "scope": "player",
+
+    "persistent": true
+
+  },
+
+  {
+
+    "title": "PYJAMA PARTY",
+
+    "desc": "Ceux qui jouent en pyjama ou jogging distribuent 2 coups. Ceux qui sont en jean chez eux gnolent 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "Chacun votre tour, citez une marque de fast-food. Celui qui n'a plus d'idées gnole 3 coups.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "SWIPE TINDER",
+
+    "desc": "Partage ton écran sur Tinder (ou appli de rencontre) et swipe la première personne à droite. Refuse pour 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "LAG CERVICAL",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois attendre 3 secondes pleines avant de répondre à quelqu'un. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "DM LEAK",
+
+    "desc": "Lis le dernier message privé que tu as envoyé sur Instagram ou Messenger. Refuse pour 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "ALPHABET À L'ENVERS",
+
+    "desc": "Récite l'alphabet à l'envers en moins de 15 secondes. Gnole 2 coups si tu échoues, distribue 3 coups si tu réussis.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "GÉOGRAPHIE",
+
+    "desc": "Le premier à écrire la capitale de l'Australie dans le chat distribue 3 coups. Ceux qui ont écrit Sydney ou Melbourne gnolent 2 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "FLEMMARD",
+
+    "desc": "Ceux qui ont commandé à manger ce soir sur UberEats ou Deliveroo gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "DJ",
+
+    "desc": "Jusqu'à la prochaine purge, tu choisis la musique de fond. Si quelqu'un se plaint de tes goûts de merde, il gnole 1 coup.",
+
+    "type": "bonus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "VOUVOIEMENT",
+
+    "desc": "Jusqu'à la prochaine purge, il est strictement interdit de se tutoyer entre joueurs. Gnole 1 coup par infraction.",
+
+    "type": "malus",
+
+    "scope": "group"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "À trois, tout le monde tape un chiffre entre 1 et 5 dans le chat. Ceux qui sont seuls sur leur chiffre distribuent 2 coups.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "NOCTAMBULE",
+
+    "desc": "Ceux qui se sont couchés après 3h du matin la nuit dernière gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "TDAH",
+
+    "desc": "Partage ton écran (navigateur internet). Celui qui a le plus d'onglets ouverts gnole 3 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "IMITATEUR",
+
+    "desc": "Imite un autre joueur de l'appel. Les autres doivent deviner. Si c'est trouvé en moins de 10 secondes, vous distribuez 2 coups chacun.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "SANS MAINS",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois boire sans utiliser tes mains. Gnole 1 coup supplémentaire si tu en mets partout.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "LA FIBRE",
+
+    "desc": "Le joueur avec la meilleure connexion internet (celui qui ne lag jamais) distribue 2 coups. Le pire lagger gnole 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "MATHS EXPRESS",
+
+    "desc": "Le premier à écrire le résultat de '7 x 8' dans le chat distribue 2 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "MÉCÈNE",
+
+    "desc": "Conserve cette carte. À tout moment, tu peux l'utiliser pour offrir tous tes coups à distribuer d'un tour à la personne de ton choix.",
+
+    "type": "bonus",
+
+    "scope": "player",
+
+    "persistent": true
+
+  },
+
+  {
+
+    "title": "BOOMER",
+
+    "desc": "Ceux qui ont encore un compte Facebook actif et l'utilisent régulièrement gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "VOIX DE ROBOT",
+
+    "desc": "Jusqu'à la prochaine purge, tu dois parler de manière saccadée, comme un vieux GPS. Gnole 1 coup par erreur.",
+
+    "type": "malus",
+
+    "scope": "player"
+
+  },
+
+  {
+
+    "title": "PURGE",
+
+    "desc": "Chacun votre tour, citez une insulte de gamer. Celui qui n'a plus d'idées ou qui bégaie gnole 3 coups.",
+
+    "type": "purge"
+
+  },
+
+  {
+
+    "title": "PETIT JOUEUR",
+
+    "desc": "Le joueur (ou les joueurs) dont le verre est le plus vide à la caméra gnole 2 coups pour le remplir un peu.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "PICASSO DU NET",
+
+    "desc": "Ouvre Paint (ou équivalent), dessine un pénis les yeux fermés et envoie la capture dans le chat. La pire œuvre gnole 3 coups.",
+
+    "type": "mini-jeu"
+
+  },
+
+  {
+
+    "title": "TWITTER DRAMA",
+
+    "desc": "Ceux qui ont déjà participé à une embrouille éclatée sur Twitter (X) gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "INSPECTEUR",
+
+    "desc": "Ceux dont la chambre ou le bureau est un bordel visible à la caméra gnolent 2 coups.",
+
+    "type": "défi"
+
+  },
+
+  {
+
+    "title": "ANONYMAT",
+
+    "desc": "Jusqu'à la prochaine purge, il est interdit de prononcer le prénom ou le pseudo d'un autre joueur. Gnole 1 coup par infraction.",
+
+    "type": "malus",
+
+    "scope": "group"
+
+  },
+
+  {
+
+    "title": "CUL SEC",
+
+    "desc": "Finis ton verre cul-sec et distribue 4 coups. Si tu refuses, tu gnoles 3 coups.",
+
+    "type": "défi"
+
   }
+
 ]

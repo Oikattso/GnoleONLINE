@@ -7,18 +7,17 @@ let deck = [];
 let globalEffects = []; 
 const colors = ["#FF5733", "#33FF57", "#3357FF", "#F333FF", "#FFF333", "#33FFF3", "#FF8C00", "#8B4513", "#7FFF00", "#00CED1"];
 
-// --- CHARGEMENT ET INITIALISATION ---
+// --- CHARGEMENT ---
 async function loadCards() {
     try {
         const response = await fetch('cards.json');
         const data = await response.json();
-        // Attribution d'un ID unique à chaque carte importée
         allCards = data.map((card, index) => ({ ...card, id: index }));
         deck = [...allCards];
         shuffleDeck(deck);
     } catch (error) {
         console.error("Erreur JSON :", error);
-        alert("Impossible de charger les cartes. Vérifiez que vous utilisez un serveur local ou un hébergeur.");
+        alert("Impossible de charger les cartes.");
     }
 }
 
@@ -29,7 +28,7 @@ function shuffleDeck(array) {
     }
 }
 
-// --- CONFIGURATION JOUEURS ---
+// --- CONFIGURATION ---
 document.getElementById('player-count').addEventListener('change', (e) => {
     const container = document.getElementById('player-names-inputs');
     container.innerHTML = "";
@@ -48,18 +47,13 @@ function showRules() {
         effects: []
     }));
     
-    if (players.length < 3) {
-        alert("Il faut au moins 3 joueurs !");
-        return;
-    }
-
+    if (players.length < 3) return alert("Il faut au moins 3 joueurs !");
     document.getElementById('setup-screen').classList.add('hidden');
     document.getElementById('rules-screen').classList.remove('hidden');
 }
 
 async function startGame() {
     await loadCards(); 
-    
     if (deck.length === 0) return; 
     
     document.getElementById('rules-screen').classList.add('hidden');
@@ -68,14 +62,31 @@ async function startGame() {
     updateDeckUI();
 }
 
-// --- LOGIQUE DU JEU ---
+// --- LOGIQUE CIRCULAIRE ET AFFICHAGE ---
 function renderBoard() {
-    const board = document.getElementById('board');
-    board.innerHTML = "";
+    const container = document.getElementById('players-circle-container');
+    container.innerHTML = "";
+    
+    // Calcul mathématique pour le cercle (Ellipse adaptée à l'écran)
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const radiusX = Math.max(300, (window.innerWidth / 2) - 150); // Laisse de l'espace aux bords
+    const radiusY = Math.max(250, (window.innerHeight / 2) - 150);
+
     players.forEach((p, index) => {
+        // Placement en cercle
+        const angle = (index / players.length) * (2 * Math.PI) - (Math.PI / 2); // -PI/2 pour commencer en haut
+        const x = centerX + radiusX * Math.cos(angle);
+        const y = centerY + radiusY * Math.sin(angle);
+
         const pDiv = document.createElement('div');
         pDiv.className = `player-pion ${index === currentPlayerIndex ? 'active-player' : ''}`;
         
+        // Positionnement absolu via CSS in-line
+        pDiv.style.left = `${x}px`;
+        pDiv.style.top = `${y}px`;
+        pDiv.style.transform = "translate(-50%, -50%)"; // Centre le pion sur son point précis
+
         pDiv.innerHTML = `
             <div class="pion-circle" style="background:${p.color}"></div>
             <span>${p.name}</span>
@@ -86,7 +97,7 @@ function renderBoard() {
             </div>
             <div class="mini-card-container" id="player-effects-${index}"></div>
         `;
-        board.appendChild(pDiv);
+        container.appendChild(pDiv);
         
         const effectContainer = document.getElementById(`player-effects-${index}`);
         p.effects.forEach((eff, effIndex) => {
@@ -95,7 +106,7 @@ function renderBoard() {
         });
     });
 
-    // Affichage des effets de groupe
+    // Effets de groupe au centre
     const globalArea = document.getElementById('global-cards');
     globalArea.innerHTML = "";
     globalEffects.forEach(eff => {
@@ -103,11 +114,15 @@ function renderBoard() {
     });
 }
 
-function modifyGnole(index, amount) {
-    players[index].gnoles += amount;
-    if (players[index].gnoles < 0) {
-        players[index].gnoles = 0; 
+// Recalculer le cercle si on redimensionne la fenêtre (très pratique !)
+window.addEventListener('resize', () => {
+    if(!document.getElementById('game-screen').classList.contains('hidden')) {
+        renderBoard();
     }
+});
+
+function modifyGnole(index, amount) {
+    players[index].gnoles = Math.max(0, players[index].gnoles + amount);
     renderBoard();
 }
 
@@ -127,7 +142,6 @@ function updateDeckUI() {
 
 function drawCard() {
     if (deck.length === 0) return; 
-
     currentPlayerIndex = nextPlayerIndex;
     const playerWhoDrew = players[currentPlayerIndex];
 
@@ -142,17 +156,13 @@ function drawCard() {
     document.getElementById('card-desc').innerText = card.desc;
     document.getElementById('card-type-label').innerText = card.type.toUpperCase();
 
-    // Logique des effets et de la purge
     if (card.type === "purge") {
         players.forEach(p => { p.effects = p.effects.filter(eff => eff.persistent === true); });
         globalEffects = []; 
     } 
     else if (card.type === "malus" || card.type === "bonus") {
-        if (card.scope === "player") {
-            playerWhoDrew.effects.push(card); 
-        } else {
-            globalEffects.push(card); 
-        }
+        if (card.scope === "player") playerWhoDrew.effects.push(card); 
+        else globalEffects.push(card); 
     }
 
     nextPlayerIndex = (currentPlayerIndex + 1) % players.length;
@@ -160,15 +170,11 @@ function drawCard() {
     updateDeckUI();
 }
 
-// --- GESTION DU DECK ET DU REMÉLANGE ---
 function reshuffleDeck() {
     let activeIds = new Set();
-    
-    // Lister les cartes actives
     players.forEach(p => { p.effects.forEach(eff => activeIds.add(eff.id)); });
     globalEffects.forEach(eff => activeIds.add(eff.id));
     
-    // Reconstruire le deck 
     deck = allCards.filter(card => !activeIds.has(card.id));
     shuffleDeck(deck);
     
@@ -178,40 +184,30 @@ function reshuffleDeck() {
     cardEl.classList.add('card-animation');
     
     document.getElementById('card-title').innerText = "MÉLANGÉ !";
-    document.getElementById('card-desc').innerText = "Le paquet a été reconstitué (effets en cours exclus).";
+    document.getElementById('card-desc').innerText = "Le paquet a été reconstitué (effets exclus).";
     document.getElementById('card-type-label').innerText = "INFO";
-    
     updateDeckUI();
 }
 
-// --- GESTION DU MODAL DES CARTES ---
+// --- MODAL ---
 function openCardModal(playerIndex, effectIndex) {
     const card = players[playerIndex].effects[effectIndex];
-    
     document.getElementById('modal-card-title').innerText = card.title;
     document.getElementById('modal-card-desc').innerText = card.desc;
     document.getElementById('modal-type-label').innerText = card.type.toUpperCase();
     
     const actionsDiv = document.getElementById('modal-actions');
-    actionsDiv.innerHTML = ""; 
-    
-    if (card.persistent) {
-        actionsDiv.innerHTML = `<button class="btn-use" onclick="confirmCardUsage(${playerIndex}, ${effectIndex})">Utiliser le Joker</button>`;
-    }
+    actionsDiv.innerHTML = card.persistent ? `<button class="btn-use" onclick="confirmCardUsage(${playerIndex}, ${effectIndex})">Utiliser le Joker</button>` : ""; 
     
     document.getElementById('card-detail-modal').classList.remove('hidden');
 }
 
 function confirmCardUsage(playerIndex, effectIndex) {
-    const cardTitle = players[playerIndex].effects[effectIndex].title;
-    
-    if (confirm(`Êtes-vous sûr de vouloir consommer le joker "${cardTitle}" ? (Action définitive)`)) {
+    if (confirm(`Êtes-vous sûr de vouloir consommer le joker "${players[playerIndex].effects[effectIndex].title}" ?`)) {
         players[playerIndex].effects.splice(effectIndex, 1); 
         renderBoard(); 
         closeCardModal(); 
     }
 }
 
-function closeCardModal() {
-    document.getElementById('card-detail-modal').classList.add('hidden');
-}
+function closeCardModal() { document.getElementById('card-detail-modal').classList.add('hidden'); }

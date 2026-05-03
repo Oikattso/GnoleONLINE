@@ -9,60 +9,75 @@
 
     <!-- ÉCRAN DE CONFIGURATION -->
     <div id="setup-screen" class="screen">
-        <h1 class="glitch">GNOLE</h1>
-        <div class="setup-box">
-            <label>Nombre de joueurs (3-10) :</label>
-            <input type="number" id="player-count" min="3" max="10" value="3">
-            <div id="player-names-inputs"></div>
-            <button onclick="showRules()">CONTINUER</button>
+        <div class="horizontal-card">
+            <img src="logo.png" alt="Logo Gnole" class="main-logo">
+            <h1 class="glitch">GNOLE</h1>
+            
+            <p class="game-desc">
+                <strong>Bienvenue dans la version digitale de la Gnole !</strong><br>
+                Avant de commencer, préparez vos verres (alcool, jus de citron, ou breuvage de votre choix) et rejoignez le salon vocal Discord. Le Maître du Jeu partagera son écran. Prêts ? Entrez vos pseudos.
+            </p>
+
+            <div class="setup-box">
+                <label>Nombre de joueurs (3-10) :</label>
+                <input type="number" id="player-count" min="3" max="10" value="3">
+                <div id="player-names-inputs"></div>
+                <button onclick="showRules()" class="btn-primary">CONTINUER</button>
+            </div>
         </div>
     </div>
 
     <!-- ÉCRAN DES RÈGLES -->
     <div id="rules-screen" class="screen hidden">
-        <div class="modal">
+        <div class="horizontal-card">
             <h2>RAPPEL DES RÈGLES</h2>
             <div class="rules-content">
                 <ul>
                     <li>On ne dit pas "boire" mais <strong>"GNOLER"</strong>. (Oubli = 1 coup).</li>
                     <li>On pioche chacun son tour.</li>
                     <li>Consommez le nombre de gorgées indiqué.</li>
-                    <li><strong>Safe Word :</strong> Utilisable à tout moment, mais n'en abusez pas pour ne pas casser le jeu.</li>
+                    <li><strong>Safe Word :</strong> Utilisable à tout moment, n'en abusez pas pour garder le fun.</li>
                     <li><strong>Alternative :</strong> Si pas d'alcool, remplacez par du jus de citron pur ou une boisson détestée. Ne vous mettez pas en danger.</li>
                 </ul>
             </div>
-            <button onclick="startGame()">LANCER LA PARTIE</button>
+            <button onclick="startGame()" class="btn-primary">LANCER LA PARTIE</button>
         </div>
     </div>
 
     <!-- ZONE DE JEU -->
     <div id="game-screen" class="screen hidden">
-        <!-- Effets de groupe -->
-        <div id="global-effects-area">
-            <h3>EFFETS ACTIFS (GROUPE)</h3>
-            <div id="global-cards" class="mini-card-container"></div>
-        </div>
-
-        <!-- Plateau des joueurs -->
-        <div id="board"></div>
-
-        <!-- Zone de pioche -->
-        <div id="card-display-area">
+        <div id="game-table">
             
-            <!-- Le paquet visuel -->
-            <div id="deck-area">
-                <div id="visual-deck" onclick="drawCard()" title="Cliquez pour piocher"></div>
-                <button id="reshuffle-btn" class="hidden" onclick="reshuffleDeck()">REMÉLANGER</button>
-                <p id="deck-count">Cartes restantes : <span id="count-number">0</span></p>
-                <p id="turn-indicator">Au tour de : <span>Pseudo</span></p>
+            <!-- Les joueurs seront injectés ici en cercle via le JS -->
+            <div id="players-circle-container"></div>
+
+            <!-- La zone centrale (Fond Anthracite) -->
+            <div id="center-play-area" class="horizontal-card anthracite-card">
+                
+                <div id="global-effects-area">
+                    <h3>EFFETS ACTIFS (GROUPE)</h3>
+                    <div id="global-cards" class="mini-card-container"></div>
+                </div>
+
+                <div class="cards-container">
+                    <!-- Le paquet visuel (Verso) -->
+                    <div id="deck-area">
+                        <div id="visual-deck" onclick="drawCard()" title="Cliquez pour piocher"></div>
+                        <button id="reshuffle-btn" class="hidden btn-primary" onclick="reshuffleDeck()">REMÉLANGER</button>
+                        <p id="deck-count">Cartes restantes : <span id="count-number">0</span></p>
+                        <p id="turn-indicator">Au tour de : <span>Pseudo</span></p>
+                    </div>
+
+                    <!-- La carte révélée (Recto) -->
+                    <div id="current-card">
+                        <div id="card-type-label">GNOLE</div>
+                        <h2 id="card-title">Piochez une carte</h2>
+                        <p id="card-desc">Le jeu va commencer !</p>
+                        <img src="logo.png" alt="Logo" class="card-logo-mini">
+                    </div>
+                </div>
             </div>
 
-            <!-- La carte révélée -->
-            <div id="current-card" class="card-pushed">
-                <div id="card-type-label">GNOLE</div>
-                <h2 id="card-title">Piochez une carte</h2>
-                <p id="card-desc">Le jeu va commencer !</p>
-            </div>
         </div>
     </div>
 
@@ -73,16 +88,13 @@
             <div id="modal-type-label">TYPE</div>
             <h2 id="modal-card-title">Titre</h2>
             <p id="modal-card-desc">Description de la carte...</p>
-            <div id="modal-actions">
-                <!-- Le bouton d'utilisation apparaîtra ici si c'est un Joker -->
-            </div>
+            <div id="modal-actions"></div>
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <script src="app.js"></script>
     <script>
-        // Génère les 3 premiers inputs dès le chargement
         window.onload = () => {
             document.getElementById('player-count').dispatchEvent(new Event('change'));
         };

@@ -1,10 +1,14 @@
 /* --- Style Général --- */
 body {
     background-color: #000;
+    background-image: url('background.png'); /* Ton fond d'écran */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden; /* Empêche le scroll pour la table circulaire */
 }
 
 .screen {
@@ -13,275 +17,171 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 100vw;
 }
 
 .hidden { display: none !important; }
+h1, h2, h3 { text-transform: uppercase; font-weight: 900; margin-top: 0; }
 
-h1, h2, h3 { text-transform: uppercase; font-weight: 900; }
-
-button {
-    background: #fff;
-    color: #000;
-    border: 3px solid #fff;
-    padding: 10px 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
+/* --- Les Cartes Horizontales (Menus & Centre) --- */
+.horizontal-card {
+    background: rgba(0, 0, 0, 0.85); /* Noir semi-transparent pour garder le fond visible */
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
 }
 
-button:hover { background: #000; color: #fff; }
+.anthracite-card {
+    background: #1a1a1a; /* Fond gris très foncé / anthracite */
+    border-color: #555; /* Contour légèrement plus sombre pour le centre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 10; /* Pour être toujours au-dessus des joueurs */
+}
 
-/* --- Setup & Inputs --- */
+/* --- Écran d'accueil & Logos --- */
+.main-logo { width: 120px; margin-bottom: -10px; }
+.game-desc { font-size: 1.1em; line-height: 1.5; margin-bottom: 25px; color: #ccc; }
+
+#player-names-inputs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Max 5 inputs par ligne ! */
+    gap: 10px;
+    margin: 20px 0;
+}
+
 .setup-box input {
     background: #000;
     border: 2px solid #fff;
     color: #fff;
-    padding: 5px;
-    margin: 5px;
-}
-
-/* --- Plateau & Joueurs --- */
-#board {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
-}
-
-.player-pion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #fff;
     padding: 10px;
-    width: 120px;
-}
-
-.pion-circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 5px;
-}
-
-.active-player {
-    border: 5px solid #fff;
-    box-shadow: 0 0 15px #fff;
-    transform: scale(1.1);
-}
-
-.gnole-counter {
-    font-size: 1.2em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 8px;
-}
-
-.btn-gnole {
-    cursor: pointer;
-    background: #fff;
-    color: #000;
-    width: 25px;
-    height: 25px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 0.9em;
-    user-select: none;
-    transition: 0.2s;
-}
-
-.btn-gnole:hover {
-    background: #555;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-/* --- La Carte Révélée --- */
-#current-card {
-    background: #fff;
-    color: #000;
-    width: 300px;
-    min-height: 400px;
-    padding: 20px;
-    border: 10px solid #000;
-    outline: 5px solid #fff;
     text-align: center;
 }
 
-#card-type-label { 
-    font-weight: bold; 
-    border-bottom: 2px solid #000; 
-    margin-bottom: 15px; 
-}
-
-.card-animation {
-    animation: flipIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-
-@keyframes flipIn {
-    0% { transform: rotateY(-70deg) translateY(50px); opacity: 0; filter: blur(5px); }
-    100% { transform: rotateY(0) translateY(0); opacity: 1; filter: blur(0); }
-}
-
-/* --- Effets actifs et Mini-cartes --- */
-.mini-card-container { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
-
-.mini-card {
-    font-size: 0.7em;
+.btn-primary {
     background: #fff;
     color: #000;
-    padding: 3px 6px;
-    border: 1px solid #000;
-    margin: 2px;
-    display: inline-block;
-    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 12px 25px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1.1em;
     transition: 0.2s;
 }
+.btn-primary:hover { background: #000; color: #fff; }
 
-.mini-card:hover {
-    background: #ff5733; 
-    color: #fff;
-    border-color: #ff5733;
-    text-decoration: line-through;
-}
-
-.persistent-card {
-    border: 2px solid #ffd700;
-    box-shadow: 0 0 5px #ffd700;
-}
-
-/* --- Zone de Pioche et Paquet Visuel --- */
-#card-display-area {
+/* --- Table de Jeu (Layout Circulaire) --- */
+#game-table {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
 }
 
-#deck-area {
+/* --- Joueurs --- */
+.player-pion {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.pion-circle { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff; margin-bottom: 5px; }
+
+.active-player {
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px #fff;
+    transform: scale(1.1) translate(-45%, -45%); /* Compensation d'échelle pour l'absolu */
+    z-index: 6;
+}
+
+/* Compteur de Gnole */
+.gnole-counter { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; font-size: 1.2em; font-weight: bold; }
+.btn-gnole { cursor: pointer; background: #fff; color: #000; width: 25px; height: 25px; display: inline-flex; justify-content: center; align-items: center; border-radius: 50%; font-size: 0.9em; user-select: none; transition: 0.2s; }
+.btn-gnole:hover { background: #555; color: #fff; transform: scale(1.1); }
+
+/* --- Centre de la Table (Cartes) --- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+/* Le Recto et le Verso (Mêmes dimensions strictes) */
+#visual-deck, #current-card {
+    width: 220px;
+    height: 320px;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
 #visual-deck {
-    width: 200px;
-    height: 300px;
     background-color: #222;
     background-image: url('Card.png');
     background-size: cover;
     background-position: center;
-    border: 5px solid #fff;
-    border-radius: 15px;
+    border: 3px solid #fff;
     cursor: pointer;
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.8);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: 0.2s;
 }
+#visual-deck:hover { transform: translateY(-5px); box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.2); }
 
-#visual-deck:hover {
-    transform: translateY(-10px) rotate(-2deg);
-    box-shadow: -10px 15px 25px rgba(255, 255, 255, 0.2);
-}
-
-#deck-count {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-#reshuffle-btn {
-    background: #ff5733;
+#current-card {
+    background: #000;
+    border: 2px solid #fff;
     color: #fff;
-    border-color: #ff5733;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    margin-bottom: 10px;
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); box-shadow: 0 0 15px #ff5733; }
-    100% { transform: scale(1); }
-}
-
-/* --- Fenêtre Modal de Détails --- */
-#card-detail-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.85);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    z-index: 1000;
-}
-
-.modal-box {
-    background: #fff;
-    color: #000;
-    padding: 30px;
-    max-width: 400px;
-    width: 90%;
-    border: 5px solid #000;
-    outline: 3px solid #fff;
-    text-align: center;
+    align-items: center;
+    padding: 15px;
     position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
-#modal-type-label {
-    font-weight: bold;
-    border-bottom: 2px solid #000;
-    margin-bottom: 15px;
-    display: inline-block;
-}
+#card-type-label { font-weight: bold; border-bottom: 2px solid #fff; margin-bottom: 15px; width: 80%; text-align: center; padding-bottom: 5px; }
 
-.close-btn {
+.card-logo-mini {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
-    background: #000;
-    color: #fff;
-    border: 2px solid #000;
-    width: 30px;
-    height: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s;
+    width: 40px;
+    height: 40px;
+    opacity: 0.8;
 }
 
-.close-btn:hover {
-    background: #fff;
-    color: #000;
+/* Animations */
+.card-animation { animation: flipIn 0.5s cubic-bezier(0.23, 1, 0.32, 1) both; }
+@keyframes flipIn {
+    0% { transform: rotateY(-90deg) scale(0.9); opacity: 0; }
+    100% { transform: rotateY(0) scale(1); opacity: 1; }
 }
 
-.btn-use {
-    background: #ffd700;
-    color: #000;
-    border: 3px solid #000;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.2s;
-}
+/* --- Mini Cartes (Effets) --- */
+.mini-card-container { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; justify-content: center; }
+.mini-card { font-size: 0.75em; background: #fff; color: #000; padding: 3px 6px; border: 1px solid #000; margin: 2px; text-transform: uppercase; font-weight: bold; cursor: pointer; transition: 0.2s; }
+.mini-card:hover { background: #ff5733; color: #fff; text-decoration: line-through; border-color: #ff5733; }
+.persistent-card { border: 2px solid #ffd700; box-shadow: 0 0 5px #ffd700; }
 
-.btn-use:hover {
-    background: #000;
-    color: #ffd700;
-    border-color: #ffd700;
-}
+/* Modal */
+#card-detail-modal { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.85); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modal-box { background: #fff; color: #000; padding: 30px; border: 5px solid #000; text-align: center; position: relative; }
+.close-btn { position: absolute; top: 10px; right: 10px; background: #000; color: #fff; border: none; width: 30px; height: 30px; cursor: pointer; }
+.btn-use { background: #ffd700; border: 3px solid #000; margin-top: 20px; padding: 10px; font-weight: bold; cursor: pointer; }
