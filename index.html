@@ -7,15 +7,15 @@
 </head>
 <body>
 
-    <!-- ÉCRAN DE CONFIGURATION -->
-   <div id="setup-screen" class="screen">
+   <!-- ÉCRAN DE CONFIGURATION -->
+    <div id="setup-screen" class="screen">
         <div class="horizontal-card">
             <img src="logo.png" alt="Logo Gnole" class="main-logo">
             <h1 class="glitch">GNOLE</h1>
             
             <p id="ui-desc" class="game-desc">
                 <strong>Bienvenue dans la version digitale de la Gnole !</strong><br>
-                Avant de commencer, préparez vos verres et rejoignez le salon vocal Discord. Le Maître du Jeu partagera son écran. Entrez vos pseudos.
+                Avant de commencer, préparez vos verres (alcool, jus de citron, ou breuvage de votre choix) et rejoignez le salon vocal Discord. Le Maître du Jeu partagera son écran. Prêts ? Entrez vos pseudos.
             </p>
 
             <div class="setup-box">
@@ -24,12 +24,16 @@
                 <div id="player-names-inputs"></div>
                 <button id="ui-btn-continue" onclick="showRules()" class="btn-primary">CONTINUER</button>
             </div>
+            
+            <!-- LE NOUVEAU BLOC DRAPEAU (Dans la carte !) -->
+            <div class="lang-container">
+                <span id="ui-lang-label">Lang : </span>
+                <img src="flag_en.png" id="lang-toggle" onclick="toggleLanguage()" alt="Switch Language" title="Switch Language">
+            </div>
         </div>
-
-    <!-- ÉCRAN DES RÈGLES -->
-    <img src="flag_en.png" id="lang-toggle" onclick="toggleLanguage()" alt="Switch Language" title="Switch to English">
     </div>
-
+    
+    <!-- ÉCRAN DES RÈGLES -->
     <div id="rules-screen" class="screen hidden">
         <div class="horizontal-card">
             <h2 id="ui-rules-title">RAPPEL DES RÈGLES</h2>
