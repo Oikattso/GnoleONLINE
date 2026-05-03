@@ -67,11 +67,14 @@ function renderBoard() {
     const container = document.getElementById('players-circle-container');
     container.innerHTML = "";
     
-    // Calcul mathématique pour le cercle (Ellipse adaptée à l'écran)
+   // Calcul mathématique pour le cercle (Ellipse adaptée à l'écran)
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
-    const radiusX = Math.max(300, (window.innerWidth / 2) - 150); // Laisse de l'espace aux bords
-    const radiusY = Math.max(250, (window.innerHeight / 2) - 150);
+
+    // NOUVELLE FORMULE : Éloigne un peu plus les joueurs du centre
+    // Et ajoute une sécurité (Math.min) pour qu'ils ne sortent jamais de l'écran
+    const radiusX = Math.max(380, Math.min(500, (window.innerWidth / 2) - 150));
+    const radiusY = Math.max(300, Math.min(400, (window.innerHeight / 2) - 140));
 
     players.forEach((p, index) => {
         // Placement en cercle
