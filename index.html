@@ -8,39 +8,40 @@
 <body>
 
     <!-- ÉCRAN DE CONFIGURATION -->
-    <div id="setup-screen" class="screen">
+   <div id="setup-screen" class="screen">
         <div class="horizontal-card">
             <img src="logo.png" alt="Logo Gnole" class="main-logo">
             <h1 class="glitch">GNOLE</h1>
             
-            <p class="game-desc">
+            <p id="ui-desc" class="game-desc">
                 <strong>Bienvenue dans la version digitale de la Gnole !</strong><br>
-                Avant de commencer, préparez vos verres (alcool, jus de citron, ou breuvage de votre choix) et rejoignez le salon vocal Discord. Le Maître du Jeu partagera son écran. Prêts ? Entrez vos pseudos.
+                Avant de commencer, préparez vos verres et rejoignez le salon vocal Discord. Le Maître du Jeu partagera son écran. Entrez vos pseudos.
             </p>
 
             <div class="setup-box">
-                <label>Nombre de joueurs (3-10) :</label>
+                <label id="ui-player-count">Nombre de joueurs (3-10) :</label>
                 <input type="number" id="player-count" min="3" max="10" value="3">
                 <div id="player-names-inputs"></div>
-                <button onclick="showRules()" class="btn-primary">CONTINUER</button>
+                <button id="ui-btn-continue" onclick="showRules()" class="btn-primary">CONTINUER</button>
             </div>
         </div>
-    </div>
 
     <!-- ÉCRAN DES RÈGLES -->
+    <img src="flag_en.png" id="lang-toggle" onclick="toggleLanguage()" alt="Switch Language" title="Switch to English">
+    </div>
+
     <div id="rules-screen" class="screen hidden">
         <div class="horizontal-card">
-            <h2>RAPPEL DES RÈGLES</h2>
-            <div class="rules-content">
+            <h2 id="ui-rules-title">RAPPEL DES RÈGLES</h2>
+            <div id="ui-rules-content" class="rules-content">
                 <ul>
                     <li>On ne dit pas "boire" mais <strong>"GNOLER"</strong>. (Oubli = 1 coup).</li>
                     <li>On pioche chacun son tour.</li>
                     <li>Consommez le nombre de gorgées indiqué.</li>
-                    <li><strong>Safe Word :</strong> Utilisable à tout moment, n'en abusez pas pour garder le fun.</li>
-                    <li><strong>Alternative :</strong> Si pas d'alcool, remplacez par du jus de citron pur ou une boisson détestée. Ne vous mettez pas en danger.</li>
+                    <li><strong>Safe Word :</strong> Utilisable à tout moment.</li>
                 </ul>
             </div>
-            <button onclick="startGame()" class="btn-primary">LANCER LA PARTIE</button>
+            <button id="ui-btn-start" onclick="startGame()" class="btn-primary">LANCER LA PARTIE</button>
         </div>
     </div>
 
