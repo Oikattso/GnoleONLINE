@@ -25,7 +25,7 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 900; margin-top: 0; }
 
 /* --- Les Cartes Horizontales (Menus & Centre) --- */
 .horizontal-card {
-    background: rgba(0, 0, 0, 0.85); /* Noir semi-transparent pour garder le fond visible */
+    background: rgba(0, 0, 0, 0.85); 
     border: 2px solid #fff;
     border-radius: 15px;
     padding: 30px;
@@ -33,6 +33,7 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 900; margin-top: 0; }
     width: 90%;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    position: relative; /* <-- LIGNE MAGIQUE À AJOUTER ICI */
 }
 
 .anthracite-card {
@@ -189,3 +190,30 @@ setup-box input {
 .modal-box { background: #fff; color: #000; padding: 30px; border: 5px solid #000; text-align: center; position: relative; }
 .close-btn { position: absolute; top: 10px; right: 10px; background: #000; color: #fff; border: none; width: 30px; height: 30px; cursor: pointer; }
 .btn-use { background: #ffd700; border: 3px solid #000; margin-top: 20px; padding: 10px; font-weight: bold; cursor: pointer; }
+
+/* --- Bouton de Langue --- */
+.lang-container {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#lang-toggle {
+    width: 30px; /* Moitié moins large que le bouton */
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    transition: transform 0.2s;
+}
+
+#lang-toggle:hover {
+    transform: scale(1.2);
+    border-color: #ffd700;
+}
