@@ -109,11 +109,13 @@ function renderBoard() {
     // Effets de groupe au centre
     const globalArea = document.getElementById('global-cards');
     globalArea.innerHTML = "";
-    globalEffects.forEach(eff => {
-        globalArea.innerHTML += `<div class="mini-card">${eff.title}</div>`;
+    globalEffects.forEach((eff, effIndex) => {
+        // On vérifie aussi si c'est une carte persistante (dorée) au cas où !
+        const persistentClass = eff.persistent ? 'persistent-card' : '';
+        // On passe 'global' au lieu de l'index d'un joueur
+        globalArea.innerHTML += `<div class="mini-card ${persistentClass}" onclick="openCardModal('global', ${effIndex})">${eff.title}</div>`;
     });
 }
-
 // Recalculer le cercle si on redimensionne la fenêtre (très pratique !)
 window.addEventListener('resize', () => {
     if(!document.getElementById('game-screen').classList.contains('hidden')) {
@@ -190,24 +192,34 @@ function reshuffleDeck() {
 }
 
 // --- MODAL ---
-function openCardModal(playerIndex, effectIndex) {
-    const card = players[playerIndex].effects[effectIndex];
+function openCardModal(target, effectIndex) {
+    // Si la cible est 'global', on cherche dans globalEffects. Sinon, dans les effets du joueur.
+    const card = target === 'global' ? globalEffects[effectIndex] : players[target].effects[effectIndex];
+    
     document.getElementById('modal-card-title').innerText = card.title;
     document.getElementById('modal-card-desc').innerText = card.desc;
     document.getElementById('modal-type-label').innerText = card.type.toUpperCase();
     
+    // On prépare le bouton avec le bon paramètre (soit 'global', soit le numéro du joueur)
+    const targetParam = target === 'global' ? "'global'" : target;
     const actionsDiv = document.getElementById('modal-actions');
-    actionsDiv.innerHTML = card.persistent ? `<button class="btn-use" onclick="confirmCardUsage(${playerIndex}, ${effectIndex})">Utiliser le Joker</button>` : ""; 
+    
+    actionsDiv.innerHTML = card.persistent ? `<button class="btn-use" onclick="confirmCardUsage(${targetParam}, ${effectIndex})">Utiliser le Joker</button>` : ""; 
     
     document.getElementById('card-detail-modal').classList.remove('hidden');
 }
 
-function confirmCardUsage(playerIndex, effectIndex) {
-    if (confirm(`Êtes-vous sûr de vouloir consommer le joker "${players[playerIndex].effects[effectIndex].title}" ?`)) {
-        players[playerIndex].effects.splice(effectIndex, 1); 
+function confirmCardUsage(target, effectIndex) {
+    // On identifie de quelle liste on doit retirer la carte
+    const cardArray = target === 'global' ? globalEffects : players[target].effects;
+    
+    if (confirm(`Êtes-vous sûr de vouloir consommer le joker "${cardArray[effectIndex].title}" ?`)) {
+        cardArray.splice(effectIndex, 1); // Retire la carte de la bonne liste
         renderBoard(); 
         closeCardModal(); 
     }
 }
 
-function closeCardModal() { document.getElementById('card-detail-modal').classList.add('hidden'); }
+function closeCardModal() { 
+    document.getElementById('card-detail-modal').classList.add('hidden'); 
+}
