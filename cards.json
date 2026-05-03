@@ -17,11 +17,6 @@
     "scope": "group"
   },
   {
-    "title": "SÉANCE DE PURGE",
-    "desc": "Tous les effets actifs (Bonus/Malus) sont supprimés.",
-    "type": "purge"
-  },
-  {
     "title": "MAITRE DU JEU",
     "desc": "Tu peux décider qui gnole à ta place pour cette carte.",
     "type": "bonus",

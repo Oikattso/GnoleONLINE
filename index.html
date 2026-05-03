@@ -7,6 +7,7 @@
 </head>
 <body>
 
+    <!-- ÉCRAN DE CONFIGURATION -->
     <div id="setup-screen" class="screen">
         <h1 class="glitch">GNOLE</h1>
         <div class="setup-box">
@@ -17,6 +18,7 @@
         </div>
     </div>
 
+    <!-- ÉCRAN DES RÈGLES -->
     <div id="rules-screen" class="screen hidden">
         <div class="modal">
             <h2>RAPPEL DES RÈGLES</h2>
@@ -33,36 +35,38 @@
         </div>
     </div>
 
+    <!-- ZONE DE JEU -->
     <div id="game-screen" class="screen hidden">
+        <!-- Effets de groupe -->
         <div id="global-effects-area">
             <h3>EFFETS ACTIFS (GROUPE)</h3>
             <div id="global-cards" class="mini-card-container"></div>
         </div>
 
+        <!-- Plateau des joueurs -->
         <div id="board"></div>
 
+        <!-- Zone de pioche -->
         <div id="card-display-area">
-            <div id="current-card" class="card-pushed">
-                <div id="card-type-label">TYPE</div>
-                <h2 id="card-title">Titre de la carte</h2>
-                <p id="card-desc">Description de la carte...</p>
+            
+            <!-- Le paquet visuel -->
+            <div id="deck-area">
+                <div id="visual-deck" onclick="drawCard()" title="Cliquez pour piocher"></div>
+                <button id="reshuffle-btn" class="hidden" onclick="reshuffleDeck()">REMÉLANGER</button>
+                <p id="deck-count">Cartes restantes : <span id="count-number">0</span></p>
+                <p id="turn-indicator">Au tour de : <span>Pseudo</span></p>
             </div>
-            <!-- Dans la zone de pioche du game-screen -->
-<div class="controls">
-    <!-- On a bien ajouté l'ID "draw-btn" ici -->
-    <button id="draw-btn" onclick="drawCard()">PIOCHER</button>
-    <p id="turn-indicator">Au tour de : <span>Pseudo</span></p>
-</div>
 
-<!-- À la fin du body, on s'assure d'appeler l'init pour les inputs -->
-<script src="app.js"></script>
-<script>
-    // Génère les 3 premiers inputs dès le chargement
-    window.onload = () => {
-        document.getElementById('player-count').dispatchEvent(new Event('change'));
-    };
-</script>
-<!-- MODAL DÉTAILS DE LA CARTE -->
+            <!-- La carte révélée -->
+            <div id="current-card" class="card-pushed">
+                <div id="card-type-label">GNOLE</div>
+                <h2 id="card-title">Piochez une carte</h2>
+                <p id="card-desc">Le jeu va commencer !</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DÉTAILS DE LA CARTE -->
     <div id="card-detail-modal" class="hidden">
         <div class="modal-box">
             <button class="close-btn" onclick="closeCardModal()">X</button>
@@ -74,5 +78,14 @@
             </div>
         </div>
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="app.js"></script>
+    <script>
+        // Génère les 3 premiers inputs dès le chargement
+        window.onload = () => {
+            document.getElementById('player-count').dispatchEvent(new Event('change'));
+        };
+    </script>
 </body>
 </html>
