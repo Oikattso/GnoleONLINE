@@ -36,13 +36,13 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 900; margin-top: 0; }
 }
 
 .anthracite-card {
-    background: #1a1a1a; /* Fond gris très foncé / anthracite */
-    border-color: #555; /* Contour légèrement plus sombre pour le centre */
+    background: #1a1a1a; 
+    border-color: #555; 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    z-index: 10; /* Pour être toujours au-dessus des joueurs */
+    z-index: 1; /* <-- MODIFIÉ : On le passe en dessous (c'était 10) */
 }
 
 /* --- Écran d'accueil & Logos --- */
@@ -102,7 +102,7 @@ setup-box input {
     padding: 10px;
     width: 120px;
     transition: transform 0.3s ease;
-    z-index: 5;
+    z-index: 10; /* <-- MODIFIÉ : On les passe au-dessus du plateau (c'était 5) */
 }
 
 .pion-circle { width: 40px; height: 40px; border-radius: 50%; border: 3px solid #fff; margin-bottom: 5px; }
@@ -110,8 +110,8 @@ setup-box input {
 .active-player {
     border: 5px solid #fff;
     box-shadow: 0 0 20px #fff;
-    transform: scale(1.1) translate(-45%, -45%); /* Compensation d'échelle pour l'absolu */
-    z-index: 6;
+    transform: scale(1.1) translate(-45%, -45%); 
+    z-index: 15; /* <-- MODIFIÉ : Toujours au-dessus des autres joueurs (c'était 6) */
 }
 
 /* Compteur de Gnole */
