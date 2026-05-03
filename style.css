@@ -51,19 +51,23 @@ h1, h2, h3 { text-transform: uppercase; font-weight: 900; margin-top: 0; }
 
 #player-names-inputs {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Max 5 inputs par ligne ! */
+    /* On utilise auto-fit : ça mettra autant de cases que possible (max 5 vu le max-width) 
+       et ça les passera à la ligne si on manque de place */
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); 
     gap: 10px;
     margin: 20px 0;
+    width: 100%;
 }
 
-.setup-box input {
+setup-box input {
     background: #000;
     border: 2px solid #fff;
     color: #fff;
     padding: 10px;
     text-align: center;
+    width: 100%; /* Force l'input à respecter la taille de la grille */
+    box-sizing: border-box; /* LA LIGNE MAGIQUE : inclut le padding et la bordure dans le calcul de la largeur */
 }
-
 .btn-primary {
     background: #fff;
     color: #000;
