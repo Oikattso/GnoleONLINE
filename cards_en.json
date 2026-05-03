@@ -1,0 +1,1054 @@
+[
+  {
+    "title": "NEVER HAVE I EVER #2",
+    "desc": "Make up the rest. Those who have already done it drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "VOYEUR",
+    "desc": "Drink 2 sips if you've ever caught your parents doing the dirty.",
+    "type": "défi"
+  },
+  {
+    "title": "MARRIAGE",
+    "desc": "Until the next purge card, whatever you drink, the player opposite you drinks too, and vice versa.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MUTISM",
+    "desc": "You are no longer allowed to say the word 'drink' until the next purge card. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Choose a theme. On the count of three, everyone says a word related to this theme. Those who said the same word give out 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "SUGAR DADDY / COUGAR",
+    "desc": "Give out 2 sips if you've fucked someone more than twice your age, +1 sip if you lied about yours to seduce them.",
+    "type": "défi"
+  },
+  {
+    "title": "ORACLE",
+    "desc": "Everyone tries to guess when you last got laid. The closest guesser gives out 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "COSMOPOLITAN",
+    "desc": "Give out as many sips as the number of nationalities you've hooked up with.",
+    "type": "défi"
+  },
+  {
+    "title": "SEXT",
+    "desc": "Read aloud the first three messages that pop up on Messenger when you search for the word 'fuck'. Refuse for 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "DICTIONARY",
+    "desc": "Give out 3 sips if you can find 5 synonyms for VAGINA. Drink 3 sips if you fail.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "MOLE",
+    "desc": "Drink 2 sips if you have a hideous mole somewhere on your body.",
+    "type": "défi"
+  },
+  {
+    "title": "GLOBETROTTER",
+    "desc": "Give out as many sips as the number of countries you've visited in the past year.",
+    "type": "défi"
+  },
+  {
+    "title": "BIG FREEBIE",
+    "desc": "Drink 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Pick two players to tell an embarrassing story from their life. The others vote for the cringiest. The winner gives out 2 sips, the loser drinks 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "BALL AND CHAIN",
+    "desc": "Until the next purge card, you must yell 'cheers to bad decisions!' every time you drink. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "NOT HUMAN",
+    "desc": "Sing a famous rap or pop song. Give out 3 sips if you nail it, drink 2 if you ruin it.",
+    "type": "défi"
+  },
+  {
+    "title": "GOLDEN SHOWER",
+    "desc": "Drink 2 sips if you've ever done weird stuff involving pee.",
+    "type": "défi"
+  },
+  {
+    "title": "PITCHING A TENT",
+    "desc": "Drink 2 sips if you've ever been called to the board in class with a visible boner.",
+    "type": "défi"
+  },
+  {
+    "title": "#123#",
+    "desc": "Dial a random phone number and keep the conversation going as long as possible. Give out 2 sips if you last more than a minute, refuse for 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "MIRROR",
+    "desc": "Keep this card. At any time, you can redirect your sips to the player of your choice.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "NERVOUS",
+    "desc": "Until the next purge, you must shout insults every time you speak.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "TURBO",
+    "desc": "Until the next purge, you can never just drink 1 sip. It's a minimum of 2 sips every time.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "BIG FREEBIE",
+    "desc": "Give out 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "ENGINEER",
+    "desc": "Make up a rule that applies until the next purge.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "FREEBIE",
+    "desc": "Drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "RELENTLESS",
+    "desc": "Keep this card. At any time, you can double the number of sips being given in a turn.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "FREEBIE",
+    "desc": "Give out 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "BABA",
+    "desc": "You can no longer pronounce the letter 'R' until the next purge. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DICTIONARY",
+    "desc": "Give out 3 sips if you find 5 synonyms for having an erection. Drink 3 if you fail.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "ROCK-PAPER-DRINK",
+    "desc": "Play Rock-Paper-Scissors with the next player (best of 3). The loser drinks 1 sip.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "FREEBIE",
+    "desc": "Drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "DEAD POETS",
+    "desc": "Quote 3 rap punchlines. Drink 2 sips if you fail.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "HOLY MOLY",
+    "desc": "Until the next purge, drink 1 sip every time you swear.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "RECYCLING",
+    "desc": "Drink 2 sips if you are wearing yesterday's underwear.",
+    "type": "défi"
+  },
+  {
+    "title": "ALTRUIST",
+    "desc": "You hate drinking alone. You can give out 1 sip every time you drink until the next purge.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "DOUBLE PENALTY",
+    "desc": "You play with 2 glasses until the next purge. All your sips are doubled.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "CONFESSIONAL",
+    "desc": "Until the next purge, you must answer all questions asked by other players. Drink 1 sip per dodged question.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "POP IDOL",
+    "desc": "You can only speak by singing until the next purge. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MARRIAGE",
+    "desc": "Until the next purge, the next player drinks everything you drink and vice versa.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "ZODIAC",
+    "desc": "Give out as many sips as players whose zodiac sign you can guess. Drink 2 sips if you don't know any.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "BUSTED",
+    "desc": "Drink 2 sips if your parents ever caught you in bed with someone, +1 sip if you kept going anyway.",
+    "type": "défi"
+  },
+  {
+    "title": "PIG LATIN",
+    "desc": "You can only speak in Pig Latin (or reverse slang) until the next purge. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "HOOLIGAN",
+    "desc": "Sing a hardcore football/soccer chant. Drink 2 sips if you fail.",
+    "type": "défi"
+  },
+  {
+    "title": "QUESTION KING",
+    "desc": "Until the next purge, players who answer your questions drink 1 sip.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "BODYGUARD",
+    "desc": "Keep this card. At any time, you can sacrifice yourself and drink instead of another player. Fucking beautiful.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "QUESTION QUEEN",
+    "desc": "Until the next purge, players who answer your questions drink 1 sip.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "CRAZY ACCENT",
+    "desc": "Until the next purge, speak with a thick foreign or regional accent. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "INSOMNIA",
+    "desc": "Drink 2 sips if you've ever cured your insomnia with masturbation.",
+    "type": "défi"
+  },
+  {
+    "title": "CUSTODY",
+    "desc": "Drink 2 sips if you've ever had a run-in with the police. Give out double if your story makes the others laugh.",
+    "type": "défi"
+  },
+  {
+    "title": "IMMUNITY",
+    "desc": "Keep this card. At any time, you can use it to avoid drinking for 1 turn.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "DOUBLE DEALING",
+    "desc": "Tell one lie and one truth. Each player must guess the lie. The losers drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CULTURE",
+    "desc": "Give out 3 sips if you know what a 'Dirty Sanchez' is. If you don't, drink 2 sips and read the definition out loud.",
+    "type": "question"
+  },
+  {
+    "title": "DOUBLE DEALING #2",
+    "desc": "Tell one lie and one truth. Each player must guess the lie. The losers drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "TRANSIT",
+    "desc": "Give out 2 sips if you've already pooped since the start of the evening, +1 if someone caught you doing it.",
+    "type": "défi"
+  },
+  {
+    "title": "FREEBIE",
+    "desc": "Give out 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "BIRTHDAY",
+    "desc": "State the birthdate of the previous player. Drink 2 sips if you fail.",
+    "type": "question"
+  },
+  {
+    "title": "SNOWDEN",
+    "desc": "The previous player chooses your new Facebook/Instagram profile picture. Refuse for 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "HARMONY",
+    "desc": "All players who have drunk more than you give out 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "MARRIAGE FOR ALL",
+    "desc": "Until the next purge, whatever you drink, people of the same gender drink too, and vice versa.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "UNCERTAIN",
+    "desc": "You can only express yourself in questions until the next purge. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DRUNKARD",
+    "desc": "Until the next purge, you must yell 'God bless the booze!' every time you drink. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MARRIAGE",
+    "desc": "Until the next purge, the previous player drinks everything you drink and vice versa.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DICTIONARY",
+    "desc": "Give out 3 sips if you find 5 synonyms for MONEY. Drink 3 if you fail.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "BROWSER HISTORY",
+    "desc": "Let the next player read your last 24h browser history out loud, or refuse and drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "POP QUIZ #2",
+    "desc": "Name the last 3 cards drawn. Drink 2 sips for each forgotten card.",
+    "type": "question"
+  },
+  {
+    "title": "HUSTLER",
+    "desc": "Until the next purge, drink 1 sip for every person of the opposite sex who drinks.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "PUKE",
+    "desc": "Give out as many sips as the number of times you've thrown up this year.",
+    "type": "défi"
+  },
+  {
+    "title": "HARMONY",
+    "desc": "All players who have drunk less than you drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "POETRY",
+    "desc": "Words that rhyme with 'uck'? The one who runs out of ideas drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "JACKIE",
+    "desc": "Those who have ever worn a full white suit drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "WOULD YOU RATHER",
+    "desc": "A pint of piss or a shot of period blood? Everyone votes, the minority drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PORNSTAR",
+    "desc": "Players who have filmed themselves doing the dirty drink 2 sips. Give them out instead if you show a clip.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a common cliché. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "RED LIGHT DISTRICT",
+    "desc": "Players who have messed around with a prostitute or stripper drink 2 sips. Give them out if you tell the story.",
+    "type": "défi"
+  },
+  {
+    "title": "WOULD YOU RATHER",
+    "desc": "Fuck a goat but no one knows, or NOT fuck it but everyone thinks you did? Everyone votes, the minority drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "WEASLEY",
+    "desc": "Players who have hooked up with a redhead drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "NERD",
+    "desc": "Players wearing braces or glasses drink 2 sips. +1 sip for the braces + glasses combo.",
+    "type": "défi"
+  },
+  {
+    "title": "G-STRING",
+    "desc": "Girls wearing a thong drink 2 sips. Those going commando drink 4. Guys in a thong give out 6 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "EXAMINATION",
+    "desc": "Those who have played doctor with a family member give out 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PEASANT",
+    "desc": "Everyone states their birth town. The player born in the biggest farm town drinks 1 sip.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "TRACING",
+    "desc": "If you have a tattoo, the others must try to redraw it. If they fail they drink 2 sips. If you don't have one, drink 1 sip.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SWEET HOME ALABAMA",
+    "desc": "Those who have hooked up with someone sharing even a drop of blood with them drink 3 sips. +1 if you knew it.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a Pornhub category. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "MELTING POT",
+    "desc": "Each player picks an accent they must keep until the next purge. Drink 2 sips per mistake.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "PICKPOCKET",
+    "desc": "Those who have stolen money from their parents drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "INTRUDER",
+    "desc": "Drink 2 sips if you've ever fallen asleep in someone else's bed because you were too drunk to find yours.",
+    "type": "défi"
+  },
+  {
+    "title": "CYBER SEX",
+    "desc": "Drink 2 sips if you've talked dirty on the phone. Give them out if you show your sexts.",
+    "type": "défi"
+  },
+  {
+    "title": "CAPITALIST",
+    "desc": "The player with the most cash in their wallet gives out 1 sip.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SOULMATE",
+    "desc": "All players point to the person they are closest to. Loners with no votes drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SLACKER",
+    "desc": "Everyone points to the laziest player. The one with the most votes drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SOLO",
+    "desc": "The last player to have masturbated gives out 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "REVOLUTION",
+    "desc": "Players with a French last name drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "POETRY",
+    "desc": "Words that rhyme with 'itch'? The one who runs out of ideas drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "RANDOM",
+    "desc": "On 3, everyone holds up fingers (1 to 10). Those with matching numbers are eliminated. The survivor with the highest number gives out 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "AMNESIA",
+    "desc": "Players who have slept with someone whose name they forgot drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "COMMUNIST",
+    "desc": "The player with the least cash in their wallet drinks 1 sip.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "NO YES, NO NO",
+    "desc": "Players cannot say 'yes' or 'no' until the next purge. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a type of alcohol. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "CONFESSION",
+    "desc": "Players who have already lied since the game started drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "TRUMP",
+    "desc": "Players vote for the most racist player. The chosen one drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "MASTER KEY",
+    "desc": "All players shorter than you drink 1 sip. If the difference is more than 10cm (4 inches), they drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "POETRY",
+    "desc": "Words that rhyme with 'it'? The one who runs out of ideas drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "CIVIL UNION",
+    "desc": "Players who have kissed someone of the same sex drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "CRINGE TV",
+    "desc": "Those who have been on TV or the internet for an embarrassing reason drink 1 sip. Give out 1 sip instead if you show the clip.",
+    "type": "défi"
+  },
+  {
+    "title": "TARZAN",
+    "desc": "Drink 1 sip if you've pooped in the wild, +1 sip if you didn't wipe.",
+    "type": "défi"
+  },
+  {
+    "title": "BUZZER",
+    "desc": "The first player to name each new song that plays until the next purge gives out 1 sip.",
+    "type": "bonus",
+    "scope": "group"
+  },
+  {
+    "title": "RETIREMENT",
+    "desc": "The oldest player drinks 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "INCOGNITO MODE",
+    "desc": "Take turns naming porn tube sites. The one who runs out of ideas drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "BARFLY",
+    "desc": "Players vote for the one who chugs the fastest. The chosen one drinks 3 sips to prove it.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "RAISINS",
+    "desc": "Those who have masturbated 4 times or more today drink 1 sip to recharge their batteries.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a character who dies in a TV show. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "WILL AND TESTAMENT",
+    "desc": "Players who had to drink on the previous card team up to give 2 sips to the person of their choice.",
+    "type": "défi"
+  },
+  {
+    "title": "COUCH POTATO",
+    "desc": "Players vote for the least athletic player. The chosen one drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "FORMULA 1",
+    "desc": "Players who passed their driving test on the first try give out 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "WOULD YOU RATHER",
+    "desc": "Have pubes instead of teeth or teeth instead of pubes? Everyone votes, the minority drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a Pokémon. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "POP PORN",
+    "desc": "Those who have had a sexual experience in a movie theater give out 2 sips. Drink them instead if it was a solo experience.",
+    "type": "défi"
+  },
+  {
+    "title": "DOUBLE OR NOTHING",
+    "desc": "Until the next purge, players can try to cancel their sips via a coin flip. If they guess wrong, the penalty is doubled.",
+    "type": "bonus",
+    "scope": "group"
+  },
+  {
+    "title": "BASEMENT DWELLER",
+    "desc": "Players who still live with their parents drink 2 sips, +1 if they are over 25.",
+    "type": "défi"
+  },
+  {
+    "title": "PENNILESS",
+    "desc": "The player with the lowest monthly salary drinks their salary divided by 1000. Those with no income drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "On 3, everyone points at another player. The one with the most votes drinks 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming an object that could be used as a dildo. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "PLAYER",
+    "desc": "The player who has been single the longest gives out 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "AUCTION",
+    "desc": "Players bid on how many sips they are willing to drink in order to give out double that amount.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "INDISCREET",
+    "desc": "All players whose colleagues/teachers caught them having an embarrassing conversation drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "MULLET",
+    "desc": "Players sporting a hideous goatee or terrible bangs drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "HIPPIE",
+    "desc": "Vegans drink 2 sips, +3 if they wear harem pants.",
+    "type": "défi"
+  },
+  {
+    "title": "MACHISMO",
+    "desc": "Guys drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "CONCHITA WURST",
+    "desc": "Players who have cross-dressed before drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PENGUIN SUIT",
+    "desc": "Players who work in a suit or formal wear drink 1 sip to forget their pain.",
+    "type": "défi"
+  },
+  {
+    "title": "AWARDS",
+    "desc": "Give out as many sips as players you wouldn't go on vacation with. Double them if you reveal their names.",
+    "type": "défi"
+  },
+  {
+    "title": "NEVER HAVE I EVER",
+    "desc": "Make up the rest. Those who have already done it drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "On 3, everyone points at another player. The one with the most votes drinks 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "IMPOTENT",
+    "desc": "Players who have suffered from 'whiskey dick' or performance anxiety drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "WINO",
+    "desc": "Drink 2 sips if you've ever gotten shitfaced completely alone.",
+    "type": "défi"
+  },
+  {
+    "title": "MACRON",
+    "desc": "Players who have fantasized about a teacher or a boss drink 2 sips. Give out 1 sip instead if you tell the story.",
+    "type": "défi"
+  },
+  {
+    "title": "THREESOME",
+    "desc": "Players who have had a threesome drink 2 sips. Add 2 more sips if there were more than 3 of you.",
+    "type": "défi"
+  },
+  {
+    "title": "SEXISM",
+    "desc": "Girls drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "FREEBIE COMBO",
+    "desc": "Take turns picking a player who must drink 1 sip. Add 1 extra sip if you have a valid reason.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "HONORS",
+    "desc": "Players who got straight A's in high school drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "CRYBABY",
+    "desc": "Players who cried in school over a bad grade drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "WOULD YOU RATHER",
+    "desc": "A great lay that smells bad, or a bad lay that smells great? Everyone votes, the minority drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a sex position. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "BALDY",
+    "desc": "The player who will go bald first drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "HOBBIT",
+    "desc": "The player with the biggest feet drinks 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PUBERTY",
+    "desc": "The youngest player drinks 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "POETRY",
+    "desc": "Words that rhyme with 'unt'? The one who runs out of ideas drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SIMP",
+    "desc": "Those who have paid for content like OnlyFans or MYM drink 3 sips. Give out double if you are or were a 'Top Fan'.",
+    "type": "défi"
+  },
+  {
+    "title": "ENTREPRENEUR",
+    "desc": "Players who considered starting an OnlyFans drink 2 sips. Those who actually did give out 5 sips (and drop their link in the chat).",
+    "type": "défi"
+  },
+  {
+    "title": "MUTE",
+    "desc": "Until the next purge, you must mute yourself on Discord when it's not your turn. Drink 1 sip if you forget.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "SPEEDRUN",
+    "desc": "The first player to drop a cat GIF in the text chat gives out 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "YOUTUBE HISTORY",
+    "desc": "Screen share and show your last 5 YouTube searches, or refuse and drink 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a multiplayer video game. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "ECHO",
+    "desc": "Until the next purge, you must repeat the last sentence you just said. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "HACKER",
+    "desc": "Keep this card. At any time, use it to completely cancel the effect of a card played against you.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "NO-LIFE",
+    "desc": "The player with the most hours on their currently played game (Steam, Riot, etc.) gives out 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "HIDDEN CAMERA",
+    "desc": "Players with their webcam on give out 1 sip. The others (the shy ones) drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "CAPS LOCK",
+    "desc": "Until the next purge, everything you type in the text chat must be IN ALL CAPS. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "PURGE",
+    "desc": "On 3, strike the most ridiculous pose for the camera. The last one to laugh gives out 3 sips. Cam-less players automatically drink 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "SETUP",
+    "desc": "Take a picture of your gaming/call setup and post it in the chat. The group votes for the worst setup; the loser drinks 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "BINGE-WATCHER",
+    "desc": "Those who watched more than 3 episodes of a show today drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "VOICE KARAOKE",
+    "desc": "Hum a song into your mic to make others guess. The first to guess right gives out 2 sips. If nobody guesses, you drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "LOW BATTERY",
+    "desc": "Players whose phone, wireless headset, or controller is under 15% battery drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PING",
+    "desc": "Until the next purge, you must say 'ping' before you speak. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "MODERATOR",
+    "desc": "Until the next purge, you have the power to mute anyone during their own turn so they have to play in silence.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "TRASH USERNAME",
+    "desc": "Those using a completely abstract Discord username (with zero connection to their real name) drink 1 sip.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "On 3, everyone drops an emoji in the text chat. Those who posted the exact same emoji drink 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "WALLPAPER",
+    "desc": "Show your phone lock screen to the camera. If your own face is on it, drink 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "THE HOST",
+    "desc": "The creator of the Discord server (or call admin) gives out 2 sips as master of the house.",
+    "type": "défi"
+  },
+  {
+    "title": "ASMR",
+    "desc": "Until the next purge, you can only speak by whispering super close to your mic. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "HOMEBODY",
+    "desc": "Players who haven't stepped foot outside today drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "RUSSIAN ROULETTE",
+    "desc": "Type a number from 1 to 6 in chat. The next player does the same, etc. The first to type '1' drinks 4 sips and the game ends.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "BATHROOM BREAK",
+    "desc": "Keep this card. You can use it to go to the bathroom or grab a drink without penalty during others' turns.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "PAJAMA PARTY",
+    "desc": "Those playing in pajamas or sweatpants give out 2 sips. Those wearing jeans at home drink 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a fast-food chain. The one who runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "TINDER SWIPE",
+    "desc": "Screen share Tinder (or any dating app) and swipe right on the first person you see. Refuse for 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "BRAIN LAG",
+    "desc": "Until the next purge, you must wait 3 full seconds before replying to anyone. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "DM LEAK",
+    "desc": "Read the very last private message you sent on Instagram or Messenger. Refuse for 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "BACKWARDS ALPHABET",
+    "desc": "Recite the alphabet backwards in under 15 seconds. Drink 2 sips if you fail, give out 3 if you succeed.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "GEOGRAPHY",
+    "desc": "The first to type the capital of Australia in chat gives out 3 sips. Those who typed Sydney or Melbourne drink 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "SLUGGISH",
+    "desc": "Those who ordered delivery tonight (UberEats, DoorDash, etc.) drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "DJ",
+    "desc": "Until the next purge, you choose the background music. If anyone complains about your trash taste, they drink 1 sip.",
+    "type": "bonus",
+    "scope": "player"
+  },
+  {
+    "title": "MR. FORMAL",
+    "desc": "Until the next purge, it is strictly forbidden to use first names or casual nicknames. You must address others formally. Drink 1 sip per infraction.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "PURGE",
+    "desc": "On 3, everyone types a number between 1 and 5 in the chat. Those who are the only ones on their number give out 2 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "NIGHT OWL",
+    "desc": "Those who went to bed after 3 AM last night drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "ADHD",
+    "desc": "Screen share your browser. The one with the most open tabs drinks 3 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "IMPERSONATOR",
+    "desc": "Imitate another player in the call. If someone guesses who it is in under 10 seconds, you each give out 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "LOOK MA, NO HANDS",
+    "desc": "Until the next purge, you must drink without using your hands. Drink 1 extra sip if you spill it everywhere.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "FIBER OPTICS",
+    "desc": "The player with the best internet connection (never lags) gives out 2 sips. The worst lagger drinks 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "QUICK MATHS",
+    "desc": "The first to type the result of '7 x 8' in the chat gives out 2 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "PHILANTHROPIST",
+    "desc": "Keep this card. At any time, you can use it to pass all the sips you were supposed to give out during a turn to the person of your choice.",
+    "type": "bonus",
+    "scope": "player",
+    "persistent": true
+  },
+  {
+    "title": "BOOMER",
+    "desc": "Those who still have an active Facebook account and use it regularly drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "ROBOT VOICE",
+    "desc": "Until the next purge, you must speak in a choppy, robotic voice like an old GPS. Drink 1 sip per mistake.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "PURGE",
+    "desc": "Take turns naming a typical gamer insult. The one who stutters or runs out of ideas drinks 3 sips.",
+    "type": "purge"
+  },
+  {
+    "title": "LIGHTWEIGHT",
+    "desc": "The player(s) whose glass looks the emptiest on camera drinks 2 sips to fill it up a bit.",
+    "type": "défi"
+  },
+  {
+    "title": "INTERNET PICASSO",
+    "desc": "Open Paint (or equivalent), draw a penis with your eyes closed, and send the screenshot in the chat. The worst artwork drinks 3 sips.",
+    "type": "mini-jeu"
+  },
+  {
+    "title": "TWITTER DRAMA",
+    "desc": "Those who have gotten involved in a stupid argument on Twitter (X) drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "INSPECTOR",
+    "desc": "Those whose room or desk looks like a messy disaster on camera drink 2 sips.",
+    "type": "défi"
+  },
+  {
+    "title": "ANONYMITY",
+    "desc": "Until the next purge, pronouncing another player's first name or username is forbidden. Drink 1 sip per infraction.",
+    "type": "malus",
+    "scope": "group"
+  },
+  {
+    "title": "CHUG",
+    "desc": "Down the rest of your glass and give out 4 sips. If you refuse, drink 3 sips.",
+    "type": "défi"
+  }
+]
