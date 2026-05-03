@@ -1,0 +1,30 @@
+[
+  {
+    "title": "LE SNIPER",
+    "desc": "Le dernier à se mute sur Discord gnole 2 fois.",
+    "type": "défi"
+  },
+  {
+    "title": "POIDS LOURD",
+    "desc": "Tu gnoles double dose pendant 3 tours.",
+    "type": "malus",
+    "scope": "player"
+  },
+  {
+    "title": "LOI SÈCHE",
+    "desc": "Personne ne peut gnoler pendant un tour de table.",
+    "type": "bonus",
+    "scope": "group"
+  },
+  {
+    "title": "SÉANCE DE PURGE",
+    "desc": "Tous les effets actifs (Bonus/Malus) sont supprimés.",
+    "type": "purge"
+  },
+  {
+    "title": "MAITRE DU JEU",
+    "desc": "Tu peux décider qui gnole à ta place pour cette carte.",
+    "type": "bonus",
+    "scope": "player"
+  }
+]
